@@ -1,0 +1,56 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<script language="javascript">
+function validate()
+{
+ var Choice=document.myform.x.value;
+ if (Choice=="")
+ {
+  alert("choice is required");
+  return false;
+ }
+ else
+ {
+  alert("Go further");
+  return true;
+ }
+}
+</script>
+<body style="background-image:url('bg.jpg')">
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<div class="container" style="background:linear-gradient(to left,yellow,orange 50%);">
+<form name="myform" action="http://192.168.43.211/cgi-bin/menu.py" onsubmit="return validate()">
+Choice:<input type="text" name="x" />
+<br/>
+Commands are:
+<select name="y">
+<option>date</option>
+<option>cal</option>
+<option>ifconfig</option>
+<option>systemctl status docker</option>
+<option>hadoop version</option>
+<option>java --version</option>
+<option>ls -l</option>
+<option>whoami</option>
+<option>free -m</option>
+<option>netstat -tnlp</option>
+<option>df -h</option>
+</select>
+<br/>
+<input type="submit" name="Submit" />
+</form>
+</div>
+</body>
+</html>
+

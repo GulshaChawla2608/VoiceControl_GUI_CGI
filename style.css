@@ -1,0 +1,18 @@
+body
+{
+ background-image:url("bg.jpg")
+ background-repeat:no repeat;
+ background-size: cover;
+}
+.container
+{
+ width:400px;
+ height:100px;
+ margin: 0 auto;
+ border-style:solid;
+ border-color:#000000;
+ background-color:pink;
+ color:#000000;
+ padding:20px;
+ margin:0 auto;
+}
